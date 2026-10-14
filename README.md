@@ -53,12 +53,13 @@ the derived truth tables:
 ```
    A0 B0 ──▶┌───────────┐
             │  1-bit    │─── C1 ──┐
-            │  adder    │         │
+            │  adder    │──▶ S1   │
             └───────────┘         ▼
                           ┌───────────┐
    A1 B1 ────────────────▶│  1-bit    │───▶ Cfinal
-                          │  adder    │
+                           │  adder    │───▶ S2
                           └───────────┘
+
           Sum1 ◀── stage 1        Sum2 ◀── stage 2
 ```
 
